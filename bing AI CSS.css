@@ -1,0 +1,61 @@
+@charset "utf-8";
+
+        body {
+            font-family: Arial, sans-serif; /* フォントをArialに設定 */
+            margin: 0; /* マージン（外側の余白）を0に設定 */
+            padding: 0; /* パディング（内側の余白）を0に設定 */
+            background-color: #f0f0f0; /* 背景色を薄い灰色に設定 */
+        }
+        /* ヘッダーのスタイルを設定 */
+        h1 {
+            background-color: #333; /* 背景色を暗い灰色に設定 */
+            color: #fff; /* 文字色を白に設定 */
+            padding: 10px 0; /* パディング（上下10px、左右0）を設定 */
+            margin: 0; /* マージン（外側の余白）を0に設定 */
+            text-align: center; /* テキストを中央揃えにする */
+        }
+        /* 画像のスタイルを設定 */
+        #myImage {
+        position: relative;
+        width: 50vw;/* 画面幅の80％ */
+        height: 30vw;/* 画面幅の60％ */
+        background-image: url('tango.jpg');
+        background-size: contain; /* 画像の縦横比が保たれるように画像が拡大縮小する */
+        background-repeat: no-repeat; /* 画像が繰り返し表示されないようにする */
+        background-position: center; /* 画像を中央に配置する */
+}
+        /* ボタンのスタイルを設定 */
+        .myButton {
+            position: absolute; /* ボタンの位置を絶対位置に設定（親要素（#myImage）基準） */
+            top: auto; /* ボタンを上からどこに設置するかを設定（親要素（#myImage）基準） */
+            transform: translateY(-50%); /* Y軸方向に-50%移動してボタンを中央揃えにする */
+            background-color: #ff0000; /* ボタンの背景色 */
+            border: none; /* ボタンの境界線をなくす */
+            color: white; /* ボタンの文字色を白色に設定 */
+            padding: 0.8vw 0.8vw; /* ボタン内の余白（上下10、左右10）を設定 */
+            text-align: center; /* テキストを中央揃えにする */
+            text-decoration: none; /* テキスト装飾（下線など）をなくす */
+            display: inline-block; /* インラインブロック要素として表示（幅と高さを指定可能） */
+            font-size: 16px; /* フォントサイズを16pxに設定 */
+        }
+        /* ボタンのホバーエフェクト（マウスオーバー時の動作）を設定 */
+        .myButton:hover {
+            background-color: #0034c4; /* ホバー時の背景色を設定 */
+        }
+        /* 各ボタンの位置を設定 */
+        #button1 {
+            left: auto; /* ボタン1を左から配置（親要素（#myImage）基準）*/
+            right:  20vw; /* ボタンを画面幅の右から40%ずらして配置 */
+            bottom: 10vw; /* ボタンを画面幅の右から60%ずらして配置 */
+        }
+        #button2 {
+            left: auto; /* ボタン1を左から配置（親要素（#myImage）基準）*/
+            right:  10vw; /* ボタンを画面幅の右から20%ずらして配置 */
+            bottom: 20vw; /* ボタンを画面幅の右から70%ずらして配置 */
+        }
+        /* コンテンツのスタイルを設定 */
+        p {
+            padding: 20px; /* パディング（全方向20px）を設定 */
+            margin: 0; /* マージン（外側の余白）を0に設定 */
+        }
+    
