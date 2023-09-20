@@ -1,6 +1,5 @@
 import * as THREE from './lib/three_jsm/three.module.js';
 import { OrbitControls } from './lib/three_jsm/OrbitControls.js';
-import { VRButton } from './lib/three_jsm/VRButton.js';
 
 var scene, camera, renderer;
 var geometry, material, mesh;
@@ -34,9 +33,6 @@ function init() {
 
     // OrbitControlsを作成
     controls = new OrbitControls(camera, renderer.domElement);
-
-    // VRButtonを作成
-    document.body.appendChild(VRButton.createButton(renderer));
 
     // ボタンを作成
     var buttonGeometry = new THREE.BoxGeometry(1, 1, 1);
